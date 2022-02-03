@@ -1,0 +1,13 @@
+.demo {
+  width: 80vw;
+  height: 400px;
+  left: 2.67vw;
+  border: -0.27vw solid black;
+}
+
+
+@media screen and (min-width: 74.67vw) {
+    body {
+        background-color: lightgreen;
+    }
+}

@@ -1,18 +1,16 @@
 {
   "name": "postcss-px2vm",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "author": "nxl3477",
   "description": "自动计算px转换为相应的vm单位",
   "main": "lib/bundle.cjs.js",
   "module": "lib/bundle.js",
   "browser": "lib/bundle.js",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --config build/webpack.config.js",
-    "build": "rollup --config=build/rollup.config.js",
+    "preview": "node ./preview/index.js",
     "test": "jest",
     "lint": "eslint \"src/**/*\"",
-    "docs": "rimraf docs && jsdoc -r -c jsdoc.json",
-    "prepare": "run-s lint docs build",
+    "prepare": "run-s lint",
     "deploy": "npm publish",
     "release": "dotenv release-it --ci",
     "release:beta": "release-it --preReleaseId=beta --preRelease --ci",
@@ -23,10 +21,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "http://git.alltuu.ren/frontend/"
+    "url": "https://github.com/nxl3477/postcss-px2vw/"
   },
   "publishConfig": {
-    "registry": "http://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org"
   },
   "engines": {
     "node": ">= 10.0.0",
@@ -55,6 +53,7 @@
     "dotenv-cli": "^4.0.0",
     "eslint": "^7.24.0",
     "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-html": "^6.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsdoc": "^36.0.7",
     "eslint-plugin-node": "^11.1.0",
