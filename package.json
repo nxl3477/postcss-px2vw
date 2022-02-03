@@ -17,7 +17,7 @@
     "release:minor": "release-it minor --ci",
     "release:minor:beta": "release-it minor --preReleaseId=beta --preRelease --ci"
   },
-  "keywords": [],
+  "keywords": ["postcss", "css"],
   "license": "ISC",
   "repository": {
     "type": "git",
