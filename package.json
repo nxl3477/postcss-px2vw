@@ -1,11 +1,9 @@
 {
   "name": "postcss-px2vm",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "nxl3477",
   "description": "自动计算px转换为相应的vm单位",
-  "main": "lib/bundle.cjs.js",
-  "module": "lib/bundle.js",
-  "browser": "lib/bundle.js",
+  "main": "src/index.js",
   "scripts": {
     "preview": "node ./preview/index.js",
     "test": "jest",
